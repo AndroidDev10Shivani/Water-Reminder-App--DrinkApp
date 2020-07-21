@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/waterdrop"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_water_drop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="101dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_label" />
+
+            <TextView
+                android:id="@+id/labeltext"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="hi, how are you?" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp">
+
+            <ImageView
+                android:id="@+id/idea"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_idea" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idea"
+                android:text="More tips"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlue"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tofillml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="0"
+            android:textColor="#2196F3"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="/"
+            android:textColor="#070707"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="1960"
+            android:textColor="#070707"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="ml"
+            android:textColor="#070707"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="Daily Drink Target"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:elevation="5dp"
+            app:cardCornerRadius="100dp">
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveloadingview"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="2dp"
+                app:wlv_borderColor="#F5F4F4"
+                app:wlv_borderWidth="3dp"
+                app:wlv_shapeType="circle"
+                app:wlv_titleBottomColor="#FFF"
+
+                app:wlv_titleBottomSize="24sp"
+                app:wlv_titleBottomStrokeColor="@color/colorBlue"
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleCenterColor="#FFF"
+
+                app:wlv_titleCenterSize="24sp"
+                app:wlv_titleCenterStrokeColor="@color/colorBlue"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleTopColor="#FFF"
+
+                app:wlv_titleTopSize="24sp"
+                app:wlv_titleTopStrokeColor="@color/colorBlue"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_triangle_direction="north"
+
+                app:wlv_waveAmplitude="70"
+                app:wlv_waveColor="@color/colorBlue" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/glass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_water_glass" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_add"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:id="@+id/achive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/glass"
+                android:src="@drawable/ic_achieve" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="250 ml"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlue" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/glass"
+            android:src="@drawable/ic_arrow_upward_black_24dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm that you have just drunk water"
+            android:textAlignment="center"
+            android:textColor="#867D7D" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's records"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listview_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="5dp" />
+    </LinearLayout>
+</LinearLayout>

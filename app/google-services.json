@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "565531000193",
+    "firebase_url": "https://drinkup-79a74.firebaseio.com",
+    "project_id": "drinkup-79a74",
+    "storage_bucket": "drinkup-79a74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565531000193:android:917c1e23a42b7d0d86fc80",
+        "android_client_info": {
+          "package_name": "com.sample.drinkup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565531000193-85s0n6njd787mmkufk2terscg1uk2iev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sample.drinkup",
+            "certificate_hash": "f111ae7e0601deaeda25cf1e6e680a65038ab227"
+          }
+        },
+        {
+          "client_id": "565531000193-2a3ta3f76jhppguri8j5sk4k29da0l7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7GP2DmB5u_nHMeXu5lYwsuyE-D3IeEaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565531000193-2a3ta3f76jhppguri8j5sk4k29da0l7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

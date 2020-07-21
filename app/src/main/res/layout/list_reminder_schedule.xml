@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="117dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="117dp">
+
+        <TextView
+            android:id="@+id/hour_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="4:11"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ampm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/hour_minute"
+            android:layout_toRightOf="@id/hour_minute"
+            android:fontFamily="sans-serif-thin"
+            android:text="AM"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="06dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:id="@+id/reminder_schedule_switch"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
